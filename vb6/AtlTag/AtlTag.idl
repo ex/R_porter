@@ -1,0 +1,64 @@
+// AtlTag.idl : IDL source for AtlTag.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (AtlTag.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(ED693590-6D10-4270-A778-45D0094CBF6D),
+		dual,
+		helpstring("IexAtlTag Interface"),
+		pointer_default(unique)
+	]
+	interface IexAtlTag : IDispatch
+	{
+		[id(1), helpstring("method SetPathFile")] HRESULT SetPathFile([in] BSTR pathFile, [in] LONG BufferLen, [in] BYTE bVerifyBR, [in] LONG cod);
+		[propget, id(2), helpstring("property Bitrate")] HRESULT Bitrate([out, retval] INT *pVal);
+		[propget, id(3), helpstring("property Mpeg")] HRESULT Mpeg([out, retval] short *pVal);
+		[propget, id(4), helpstring("property Layer")] HRESULT Layer([out, retval] short *pVal);
+		[propget, id(5), helpstring("property SampleRate")] HRESULT SampleRate([out, retval] INT *pVal);
+		[propget, id(6), helpstring("property Mode")] HRESULT Mode([out, retval] short *pVal);
+		[propget, id(7), helpstring("property ErrorNumber")] HRESULT ErrorNumber([out, retval] short *pVal);
+	};
+
+	[
+		object,
+		uuid(CDB2899F-AFDE-47f4-B152-56B3CD4C633F),
+		dual,
+		helpstring("IexAtlTag2 Interface"),
+		pointer_default(unique)
+	]
+	interface IexAtlTag2 : IexAtlTag
+	{
+		[id(8), helpstring("method SetBufferLength")] HRESULT SetBufferLength(INT BufferLen);
+		[id(9), helpstring("method SetPathFile2")] HRESULT SetPathFile2([in] BSTR pathFile, [in] BYTE bVerifyBR, [in] LONG cod);
+		[id(10), helpstring("method FreeBuffer")] HRESULT FreeBuffer();
+	};
+	
+
+[
+	uuid(B85EE4CE-0C3F-423B-A0E8-96C755EEFE24),
+	version(1.0),
+	helpstring("exAtlTag 1.0 Type Library")
+]
+library ATLTAGLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(D020FF56-24F5-4F5E-A776-7ECC9CB872ED),
+		helpstring("exAtlTag Class")
+	]
+	coclass exAtlTag
+	{
+		interface IexAtlTag;
+		[default] interface IexAtlTag2;
+	};
+};

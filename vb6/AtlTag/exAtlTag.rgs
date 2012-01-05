@@ -1,0 +1,34 @@
+HKCR
+{
+	AtlTag.exAtlTag.1 = s 'exAtlTag Class'
+	{
+		CLSID = s '{D020FF56-24F5-4F5E-A776-7ECC9CB872ED}'
+	}
+	AtlTag.exAtlTag = s 'exAtlTag Class'
+	{
+		CLSID = s '{D020FF56-24F5-4F5E-A776-7ECC9CB872ED}'
+		CurVer = s 'AtlTag.exAtlTag.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D020FF56-24F5-4F5E-A776-7ECC9CB872ED} = s 'exAtlTag Class'
+		{
+			ProgID = s 'AtlTag.exAtlTag.1'
+			VersionIndependentProgID = s 'AtlTag.exAtlTag'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '132497'
+			}
+			'TypeLib' = s '{B85EE4CE-0C3F-423B-A0E8-96C755EEFE24}'
+			'Version' = s '1.0'
+		}
+	}
+}
