@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>R_porter</title>
+<link rel="stylesheet" href="../../../style.css" type="text/css">
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr> 
+    <td colspan="7" bgcolor="#000000" align="center"><img src="../../../img/banner.jpg" width="780" height="75"></td>
+  </tr>
+  <tr> 
+    <td colspan="7" height=4 bgcolor="#000000"></td>
+  </tr>
+  <tr> 
+    <td colspan="7" height=6 bgcolor="#0000FF"></td>
+  </tr>
+  <tr> 
+    <td colspan="7" height=2 bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr> 
+    <td colspan="7" height=4 bgcolor="#78B5FE"></td>
+  </tr>
+  <tr> 
+    <td width=10></td>
+    <td width="10"></td>
+    <td width="648" valign="top" > <h1><br />
+        Como cargar plugins desde scripts con R_porter 1.1 (Alpha 3)</h1>
+      <blockquote> 
+        <h4 >08 Diciembre 2004</h4>
+        <p align="justify" >Me gusta la capacidad que tienen los scripts de ser 
+          f&aacute;cilmente modificables y configurables, lamentablemente no es 
+          f&aacute;cil depurarlos y si el script no es s&oacute;lo una simple 
+          prueba de concepto ser&aacute; necesario invertir tiempo en la puesta 
+          a punto del script... y bueno &iquest;Por que no usar el IDE del VB 
+          para depurar mis scripts?. No es que el VBS sea el mejor lenguaje script 
+          del mundo ni nada, he estado probando Perl &uacute;ltimamente y en mi 
+          opini&oacute;n es muy superior, m&aacute;s poderoso, multiplataforma, 
+          y con la capacidad de hacer tu c&oacute;digo tan oscuro e incomprensible 
+          para otros scripters que no necesitar&aacute;s encriptarlo :-P. Pienso 
+          que cualquier script que haga bien su trabajo ser&aacute; bueno (independientemente 
+          del lenguaje en que este escrito) si su desarrollo es f&aacute;cil y 
+          sencillo.</p>
+        <p align="justify" >&nbsp;</p>
+        <p align="justify" >As&iacute; que agregu&eacute; una funci&oacute;n a 
+          la interfaz del script para que puedas llamar funciones que residen 
+          en otros plugins, de esta manera puedes poner puntos de interrupci&oacute;n 
+          en el c&oacute;digo del plugin, (debes codificarlo pensando en que lo 
+          vas a convertir en script, osea usa s&oacute;lo caracter&iacute;sticas 
+          VBS y no VB) y ponerlo a punto.</p>
+        <p align="justify" >&nbsp;</p>
+        <p align="justify" >Por otro lado tambi&eacute;n puedes dejar de lado 
+          la exportaci&oacute;n a script y usar caracter&iacute;sticas VB como 
+          llamadas al API y crear de esta manera librer&iacute;as de funciones 
+          especiales para tus scripts.</p>
+        <p align="justify" >&nbsp;</p>
+        <p align="justify" >Imaginemos que queremos saber cuantas l&iacute;neas 
+          de c&oacute;digo tiene nuestro proyecto VB (o VC++) y cu&aacute;ntas 
+          l&iacute;neas de esas son de puro comentario, son l&iacute;neas vac&iacute;as 
+          o tienen comentarios. F&aacute;cil, nos creamos un script que analice 
+          los archivos del proyecto, pero como hemos visto que es m&aacute;s f&aacute;cil 
+          desarrollarlo en un IDE, entonces nos creamos un plugin de desarrollo 
+          [exPlugin_Scripter.dll] y un script para cargar el plugin: <a href="../PluginLoader.htm" target="_blank">[PluginLoader.vbs]</a>, 
+          ambos est&aacute;n anexados en el archivo de actualizaci&oacute;n del 
+          programa: <a href="../alpha3.zip">[alpha3.zip]</a></p>
+        <p align="justify" >&nbsp;</p>
+        </blockquote>
+      <ol>
+        <li>Luego de reemplazar los archivos existentes por los nuevos del <a href="../alpha3.zip">alpha3</a>, 
+          carga el programa y selecciona la carpeta principal donde residen los 
+          archivos de tu proyecto.<br>
+          <br>
+          <img src="pl_0.jpg" width="483" height="445"> <br>
+          <br>
+        </li>
+        <li>Copia el script <a href="../PluginLoader.htm" target="_blank">[PluginLoader.vbs]</a> 
+          a la carpeta donde guardas tus scripts y &aacute;brelo.<br>
+          <br>
+          <img src="pl_1.jpg" width="563" height="412"> <br>
+          <br>
+        </li>
+        <li>He marcado la nueva funci&oacute;n que se usa para llamar a las funciones 
+          almacenadas en plugins, el primer par&aacute;metro es el nombre del 
+          plugin, el segundo par&aacute;metro es una constante num&eacute;rica 
+          negativa que se usa para identificar las diferentes funciones que pueda 
+          tener este plugin, y el tercer y &uacute;ltimo par&aacute;metro es una 
+          matriz de par&aacute;metros opcionales para la funci&oacute;n del plugin 
+          (pasa por referencia, entonces es posible modificar sus valores desde 
+          el plugin y usarlo como valor de retorno por el script).<br>
+          <br>
+          <img src="pl_2.jpg" width="681" height="528"> <br>
+        </li>
+        <li>Ahora copia el plugin [exPlugin_Scripter.dll] a tu carpeta de plugins 
+          y reg&iacute;stralo.<br>
+          <br>
+          <img src="pl_3.jpg" width="583" height="303"> <br>
+          <br>
+        </li>
+        <li>C&aacute;rgalo y verifica que la opci&oacute;n est&eacute; activada.<br>
+          <br>
+          <img src="pl_4.jpg" width="269" height="240"> <br>
+          <br>
+        </li>
+        <li>En opciones de exploraci&oacute;n selecciona [Activar scripts durante 
+          exploraci&oacute;n] y carga el script <a href="../PluginLoader.htm" target="_blank">[PluginLoader.vbs]</a>, 
+          No te olvides de indicar que la exploraci&oacute;n s&oacute;lo se llevar&aacute; 
+          a cabo en archivos de tipo VB.<br>
+          <br>
+          <img src="pl_5.jpg" width="289" height="410"> <br>
+          <br>
+        </li>
+        <li>Durante el desarrollo debes agregar c&oacute;digo al plugin para acceder 
+          a las funciones de prueba.<br>
+          <br>
+          <img src="pl_6.jpg" width="779" height="460"> <br>
+          <br>
+        </li>
+        <li>Si pones un punto de interrupci&oacute;n puedes depurar el script 
+          en el IDE.<br>
+          <br>
+          <img src="pl_7.jpg" width="714" height="412"> <br>
+          <br>
+        </li>
+        <li>Y eso es todo. El plugin que hice es una herramienta personal que 
+          uso para explorar mis proyectos VB o VC++ adem&aacute;s de tener algunas 
+          funciones &uacute;tiles.<br>
+          <br>
+          <img src="pl_8.jpg" width="549" height="402"> <br>
+          <br>
+        </li>
+      </ol>
+      <blockquote>
+<p >&nbsp;</p>
+        <p >&nbsp;</p>
+        <p >&nbsp;</p>
+        <p >&nbsp;</p>
+      </blockquote>
+      <hr width="100%" align="center"> 
+      <p class="about" align="center"> <a href="mailto:exe_q_tor@hotmail.com">Esaú</a> 
+        - Lima - Perú - 2004</p>
+      <hr width="100%" align="center"> <p align="center"> </p></td>
+    <td width="10"  ></td>	
+  </tr>
+</table>
+
+</body>
+</html>

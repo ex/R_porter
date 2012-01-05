@@ -1,0 +1,346 @@
+<html>
+<head>
+<title>R_porter</title>
+<link rel="stylesheet" href="STYLE.CSS" type="text/css">
+<style type="text/css">
+<!--
+.style4 {font-family: "Courier New", Courier, mono}
+.style5 {
+	color: #666666;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td colspan="7" bgcolor="#000000" align="center"><img src="BANNER.JPG" width="780" height="75" border="0"></a></td>
+  </tr>
+  <tr>
+    <td colspan="7" height=4 bgcolor="#000000"></td>
+  </tr>
+  <tr>
+    <td colspan="7" height=6 bgcolor="#0000FF"></td>
+  </tr>
+  <tr>
+    <td colspan="7" height=2 bgcolor="#FFFFFF"></td>
+  </tr>
+  <tr>
+    <td colspan="7" height=4 bgcolor="#78B5FE"></td>
+  </tr>
+  <tr>
+    <td width="10"></td>
+    <td width="10"></td>
+    <td width="620" valign="top" ><h1><br />
+        <blockquote> Ayuda de R_porter 1.2</blockquote>
+      </h1>
+      <blockquote>
+        <h4 >Septiembre 2006</h4>
+        <p align="justify" >Este programa sirve para registrar
+          los archivos guardados en CD's o DVD's (aunque puede usarse para buscar en cualquier unidad o carpeta). Imagina que tienes una colecci&oacute;n enorme de MP3, videos, documentos, programas, etc que respaldas continuamente, el problema es cuando tienes que encontrar algo en ellos, la soluci&oacute;n de escribir pacientemente encima de ellos lo que contienen no siempre funciona y nunca es completa,  a veces es tanta la perdida de tiempo que muchas veces prefieres buscarlo de nuevo en internet a buscarlo en tus backups. Es ah&iacute; donde este programa es extremadamente &uacute;til para mi, y me ahorra mucho tiempo, gracias a el puedo ver a simple vista que tienen mis backups usando su explorador integrado, o puedo buscar rapidamente por titulo o nombre alg&uacute;n documento o archivo, solo necesito escribir encima del CD o DVD su c&oacute;digo para poder encontrarlo.</p>
+        <p align="justify" >&nbsp;</p>
+        <p align="justify" > A diferencia de otros programas este programa
+          permite hacer b&uacute;squedas precisas, y personalizables, ya que
+          usa una base de datos para almacenar sus registros. Tiene muchos filtros
+          pre-configurados, como buscar por autor, tama&ntilde;o, nombre, tipo,
+          categor&iacute;a, etc, los cuales se pueden combinar de muchas formas
+          creando consultas complejas, usuarios avanzados pueden usar su interprete SQL para crear consultas personalizada. Tiene la capacidad de
+          soportar plugins por lo cual se puede, si se quiere, extender su funcionalidad.</p>
+        <p align="justify" ><br>
+        </p>
+        <p ><strong>Paso a paso:</strong> como comenzar tu colecci&oacute;n de
+          m&uacute;sica:</p>
+        <ol>
+          <li>
+            <div align="justify">Instala el programa en modo completo. Si no
+              tienes WinXP es posible que necesites instalar tambi&eacute;n el <a href="http://www.microsoft.com/downloads/details.aspx?DisplayLang=en&FamilyID=6c050fe3-c795-4b7d-b037-185d0506396c">MDAC 2.7 o superior</a>,
+              <a href="http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=C717D943-7E4B-4622-86EB-95A22B832CAA">el control MS Script</a> y el <a href="http://www.microsoft.com/downloads/details.aspx?familyid=7B9BA261-7A9C-43E7-9117-F673077FFB3C&displaylang=en">soporte de VB6</a>.
+              Todos estos componentes son gratuitos y deberas encontrarlos por tu cuenta en internet. (Generalmente estos componentes estar&aacute;n ya
+              instalados en tu sistema as&iacute; que solo debes pensar en descargarlos
+              si el programa no arranca normalmente) <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Si el programa se ha instalado correctamente
+              estar&aacute;s en
+              la ventana principal. (Si te sale alg&uacute;n mensaje diciendo que no
+              estas conectado a un Base de Datos ign&oacute;ralo, lo har&aacute;s
+              a continuaci&oacute;n) <br>
+              <br>
+              <img src="m_00.png" width="483" height="445"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Crea el DSN para la base de datos por defecto
+              que viene con el instalador (Archivo <span class="style4">r_porter.mdb</span> dentro
+              de la carpeta <span class="style4">[data]</span>).
+              Usa el men&uacute;: <span class="style5">[Datos]-&gt;[Crear
+              DSN]</span> <br>
+              en el cuadro que sale tienes que seleccionar la opci&oacute;n <span class="style5">[Origen
+              de datos de sistema]</span> como se muestra: <br>
+              <br>
+              <img src="m_01.gif" width="477" height="345"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">En el dialogo que sale selecciona el controlador <span class="style5">Microsoft
+              Access Driver</span> (si no lo encuentras es que no tienes instalado el MSDAC
+            y tienes que instalarlo primero): <br>
+            <br>
+            <img src="m_02.gif" width="477" height="345"><br>
+            <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Ingresa el nombre del DNS como se muestra <span class="style4">R_porter</span>,
+              usa el bot&oacute;n <span class="style5">[Seleccionar...]</span> para
+              seleccionar la base de datos <span class="style4">r_porter.mdb</span> (buscala
+              en el directorio en que instalaste el programa dentro de la carpeta <span class="style4">[Data]</span>)
+              Cuando aceptes el DSN ya se habr&aacute; creado.<br>
+              <br>
+              <img src="m_03.gif" width="524" height="312"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">De vuelta en el programa principal con&eacute;ctate
+              a la base de datos.
+              Usa el men&uacute;: <span class="style5">[Datos]-&gt;[Conectar
+              a la BD]</span><br>
+              En el cuadro que sale veras que aparecen los DSN registrados, selecciona
+              el que creaste en el paso anterior, ingresa la contrase&ntilde;a
+              por defecto que es <span class="style4">&quot;ex&quot;</span>.
+              Prueba la conexi&oacute;n con el bot&oacute;n <span class="style5">[Conectar]</span>,
+              si la conexi&oacute;n es exitosa ver&aacute;s un mensaje abajo indicando <span class="style5">Conexi&oacute;n
+              exitosa [BD]</span>. <br>
+              <br>
+              <img src="m_04.gif" width="275" height="135"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Los pasos del 3 al 6 s&oacute;lo son necesarios la primera vez
+              que instalas el programa o si cambias de base de datos, el programa
+              tratar&aacute; de
+              cargar el DSN <span class="style4">R_porter</span> por defecto cada
+              vez que se inicie.<br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Inserta el CD donde guardas tus archivos a tu lectora.<br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Selecciona la unidad donde esta el CD que quieres
+              explorar, la opci&oacute;n <span class="style5">[Por Unidades]</span> deber&aacute; estar
+              activa.<br>
+              <br>
+              <img src="m_05.gif" width="181" height="294"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify"> Dale click a <span class="style5">[Opciones Avanzadas]</span> y
+              en el cuadro de di&aacute;logo que se muestra selecciona la pesta&ntilde;a <span class="style5">[1)
+              General]</span>. Si tus archivos est&aacute;n en m&uacute;ltiples
+              carpetas tienes que activar la casilla <span class="style5">[Incluir
+              Subdirectorios en la exploraci&oacute;n]</span> de lo contrario solo se explorar&aacute; la
+              carpeta ra&iacute;z del CD. Activa luego la casilla <span class="style5">[Agregar
+              resultados a la BD]</span>.<br>
+              Recuerda que si esta opci&oacute;n no est&aacute; activada las pesta&ntilde;as <span class="style5">[2)
+              Anexi&oacute;n BD]</span> y <span class="style5">[3) MP3]</span> estar&aacute;n
+              desactivadas, por lo tanto no te olvides de hacerlo.<br>
+              <br>
+              <img src="m_06.gif" width="289" height="410"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Ahora dale click a la pesta&ntilde;a <span class="style5">[2)
+                Anexi&oacute;n
+              BD]</span>. En esta pesta&ntilde;a puedes ingresar el nombre
+              del medio &quot;m&uacute;sica-01&quot; por ejemplo, yo ordeno mis
+              archivos MP3 por g&eacute;nero en diferentes carpetas, si esto
+              es as&iacute; para ti activa la casilla <span class="style5">[Establecer
+              genero por subdirectorio]</span>. Tambi&eacute;n acostumbro llamar
+              a mis archivos con la convenci&oacute;n: <font face="Courier New, Courier, mono">autor-nombre.mp3</font>,
+              si tienes esa convenci&oacute;n activa la casilla <span class="style5">[Considerar
+              archivo como (autor - nombre)]</span>. Casi siempre debes de
+              activar la opci&oacute;n<span class="style5"> [Establecer
+              tipo por extensi&oacute;n]</span> para
+              establecer el tipo del registro de acuerdo a la extensi&oacute;n
+              que tenga el nombre del archivo (en nuestro caso MP3). La prioridad
+              es la prioridad que se le asignar&aacute;n a todos los archivos.
+              Es bueno poner una prioridad de uno o cero para asignar prioridades
+              mayores a archivos m&aacute;s importantes posteriormente.<br>
+              Para guardar informaci&oacute;n de la estructura de tus CD's
+            o DVD's (directorios y subdirectorios) activa la opci&oacute;n <span class="style5">[A&ntilde;adir
+            informaci&oacute;n de directorios a la BD]</span>. Esto es muy importante si quieres usar la vista de exploraci&oacute;n.<br>
+            <br>
+            <img src="m_07.gif" width="289" height="410"> <br>
+            <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Como este es un CD de MP3 dale click a la pesta&ntilde;a <span class="style5">[3)
+              MP3]</span>, en la ventana que te sale activa las opciones <span class="style5">[Extraer
+              calidad de archivos MP3]</span> y <span class="style5">[A&ntilde;adir
+              informaci&oacute;n
+              MPEG - Audio (MP3)]</span>, con esto el programa extraer&aacute; autom&aacute;ticamente
+              el <em>bitrate</em> del archivo MP3, lo cual es &uacute;til si
+              tienes varios archivos de la misma canci&oacute;n y quieres saber
+              cual suena mejor. La opci&oacute;n <span class="style5">[VBR]</span> si
+              esta activa tratar&aacute; de determinar si el MP3 tiene <em>bitrate
+              variable</em> (en cuyo caso dir&aacute; que vale cero). El algoritmo
+              para extraer toda esta informaci&oacute;n de los archivos usa un
+              buffer de b&uacute;squeda del tama&ntilde;o indicado. Si no sabes
+              lo que es esto ser&iacute;a buena idea dejarlo en los valores por
+              defecto. Dicho en forma simple: a mayor buffer la exploraci&oacute;n es
+              mas lenta, a menor buffer los resultados son menos preciso (algunos
+              MP3 pueden estar corruptos o tener un Tag ID3v2 muy grande). Cierra
+              el cuadro de opciones pulsando el bot&oacute;n<span class="style5"> [Aceptar]</span> <br>
+              <br>
+              <img src="m_08.gif" width="289" height="410"><br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Todo esta listo para empezar. Dale click a <span class="style5">[Iniciar
+              Exploraci&oacute;n]</span> y te saldr&aacute; otra ventana con un reporte a medida que se anexan
+            los registros a la base de datos. Puedes cancelar la operaci&oacute;n
+            con <span class="style5">[Detener]</span> o la tecla <span class="style5">[ESC]</span><br>
+            <br>
+            <img src="m_10.gif" width="483" height="445"> <br>
+            <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Ahora usa el men&uacute; <span class="style5">[Datos]-&gt;[Control
+                de Registros]</span> para
+              ver los resultados. Como el enfoque esta sobre el campo <span class="style5">[Nombre]</span>            si
+              presionas ahora la tecla <span class="style5">[ENTER]</span> se mostrar&aacute;n
+              todos los archivos registrados:<br>
+              <br>
+              <img src="m_11.gif" width="706" height="551"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">La vista de exploraci&oacute;n es sumamente &uacute;til para ver el contenido de tus discos. Para cargarla selecciona el men&uacute;<span class="style5"> [Datos]-&gt;[Explorar BD]</span>:<br>
+              <br>
+              <img src="explorador.png" width="672" height="458"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Hay varias opciones para la busqueda, por ejemplo para buscar solo las canciones cuyo nombre
+              tengan la palabra <span class="style4">&quot;fall&quot;</span> escribe eso <span class="style4"></span> en
+              el campo <span class="style5">[Nombre]</span>, dale click al bot&oacute;n que tiene al costado,
+              y en las opciones que salen selecciona <span class="style5">[Que
+              contenga... (palabra completa)]</span> luego presiona la tecla <span class="style5">[ENTER]</span>.<br>
+              <br>
+              <img src="m_12.gif" width="270" height="115"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">&iquest;Quieres crear tu propia consulta?. Usa
+              el men&uacute; <span class="style5">[Avanzado]-&gt;[Ejecutar
+              comando SQL]</span> En la ventana que sale puedes ingresar la consulta SQL
+              que quieras. <br>
+              <br>
+              <img src="m_13.gif" width="453" height="215"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Para ver la estructura de la base de datos usa
+              el men&uacute;: <span class="style5">[Datos]-&gt;[Ver
+              estructura de la BD]</span> as&iacute;
+              podr&aacute;s saber las tablas y campos de la base de datos. <br>
+              <br>
+              <img src="m_14.gif" width="422" height="332"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">En la ventana SQL ingresa: <font face="Courier New, Courier, mono">SELECT
+              * FROM file WHERE (id_file&gt;0) AND (id_file&lt;10)</font>. Presiona
+              la tecla <span class="style5">[F5]</span><br>
+              <br>
+              <img src="m_15.gif" width="454" height="216"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Te saldr&aacute; una ventana con los resultados
+              en una tabla.<br>
+              <br>
+              <img src="m_16.gif" width="633" height="252"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Tambi&eacute;n puedes usar plugins con el programa, por ejemplo el plugin <span class="style5">[exPlugin_explorer]</span> permite
+              tambi&eacute;n ver la estructura de archivos de la base de datos. Pero para
+              poder usarlo primero tienes que registrarlo. Desde la ventana principal
+              selecciona el Men&uacute; <span class="style5">[Plugins]-&gt;[Registrar
+              plugin]</span>, selecciona el DLL: <span class="style4">exPlugin_explorer.dll</span> y
+              dale click a <span class="style5">[Abrir]</span>. Te saldr&aacute; un mensaje
+              diciendo que el registro se realizo con &eacute;xito.<br>
+              <br>
+              <img src="m_17.gif" width="563" height="412"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Ahora abre el control de plugins con <span class="style5">[F4]</span>. <br>
+              <br>
+              <img src="m_18.gif" width="583" height="322"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify">Dale doble click al plugin seleccionado y se
+              cargara la ventana de exploraci&oacute;n del plugin.<br>
+              <br>
+              <img src="m_19.gif" width="655" height="318"> <br>
+              <br>
+            </div>
+          </li>
+          <li>
+            <div align="justify"><strong>MUY IMPORTANTE:</strong> recuerda hacer
+              un respaldo de tus base de datos (puedes tener muchas bases de
+              datos cada una para guardar tipos de archivos diferentes). Usa
+              el DSN <span class="style5">R_porter</span> para
+              la base de datos que uses frecuentemente. Las bases de datos no
+              necesitan estar en el mismo directorio del programa, ubicalos donde
+              te sea f&aacute;cil hacerles copias de seguridad. (Es el DSN el que debe
+              apuntar a la ruta correcta) Si se pierde la base de datos toda
+              tu informaci&oacute;n se perder&aacute;.</div>
+          </li>
+        </ol>
+        <p>&nbsp;</p>
+        <p >&nbsp;</p>
+        <p >&nbsp;</p>
+        <p >&nbsp;</p>
+        <p >&nbsp;</p>
+        <p >&nbsp;</p>
+        <p >&nbsp;</p>
+      </blockquote>
+      <hr width="100%" align="center">
+      <p class="about" align="center"> <a href="mailto:exe_q_tor@hotmail.com">Laurens Rodr&iacute;guez Oscanoa </a>-
+        Perú 2006</p>
+      <hr width="100%" align="center">
+      <p align="center"> </p></td>
+    <td width="100%"  ></td>
+  </tr>
+</table>
+</body>
+</html>
