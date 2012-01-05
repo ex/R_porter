@@ -1,0 +1,25 @@
+
+	           R_porter 1.2
+
+ Este programa hace una exploración de unidades y
+ carpetas y los anexa a una base de datos.
+ Puede servir para seguirle el rastro a una colección 
+ de música en MP3, documentos y/o backups.
+
+ No esta incluido en el instalador, pero es necesario 
+ en sistemas W98, Windows Me y Windows2000:
+
+- vbrun60sp5		VB6 Run time files
+- mdac_typ 2.7		Microsoft Data Access Components 2.7
+- msscript.ocx		Microsoft Script control
+
+ Es muy probable que dichos componentes ya se encuentren 
+ instalados en su sistema, de no ser asi pueden descargarse 
+ desde la pagina web de Microsoft.
+
+
+ ADVERTENCIA: ESTE PROGRAMA ES GRATUITO Y SE ENTREGA 
+ SIN NINGUN TIPO DE GARANTIA. EL USUARIO AL INSTALARLO 
+ ACEPTA CUALQUIER RESPONSABILIDAD ASOCIADA CON SU USO.
+
+   (c) Copyright 2007 - Laurens Rodriguez Oscanoa (ex)

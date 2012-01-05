@@ -1,0 +1,18 @@
+***************************************************************************
+*	R_porter 1.2
+*
+*	Utilitario para administrar colecciones
+*	de musica, documentos o backups.
+***************************************************************************
+ No esta incluido en el instalador, pero es
+ necesario en sistemas previos a XP:
+
+- mdac_typ 2.7		Microsoft Data Access Components 2.7
+- msscript.ocx		Microsoft Script control
+
+ Ambos componentes son gratuitos y pueden
+ descargarse desde la pagina web de Microsoft.
+
+***************************************************************************
+*	(c) Copyright 2007 - Laurens Rodríguez Oscanoa.
+***************************************************************************
