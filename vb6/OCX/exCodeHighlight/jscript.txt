@@ -1,0 +1,305 @@
+
+AddWord "@cc_on"
+AddWord "@if"
+AddWord "@set"
+AddWord "break"
+AddWord "continue"
+AddWord "delete"
+AddWord "do"
+AddWord "else"
+AddWord "for"
+AddWord "function"
+AddWord "if"
+AddWord "in"
+AddWord "new"
+AddWord "return"
+AddWord "switch"
+AddWord "this"
+AddWord "typeof"
+AddWord "var"
+AddWord "void"
+AddWord "while"
+AddWord "with"
+
+
+AddWord "ScriptEngine", enumFunction
+AddWord "ScriptEngineBuildVersion", enumFunction
+AddWord "ScriptEngineMajorVersion", enumFunction
+AddWord "ScriptEngineMinorVersion", enumFunction
+
+AddWord "abs", enumFunction
+AddWord "acos", enumFunction
+AddWord "Add", enumFunction
+AddWord "anchor", enumFunction
+AddWord "asin", enumFunction
+AddWord "atan", enumFunction
+AddWord "atan2", enumFunction
+AddWord "atEnd", enumFunction
+AddWord "big", enumFunction
+AddWord "blink", enumFunction
+AddWord "bold", enumFunction
+AddWord "BuildPath", enumFunction
+AddWord "ceil", enumFunction
+AddWord "charAt", enumFunction
+AddWord "charCodeAt", enumFunction
+AddWord "Close", enumFunction
+AddWord "compile", enumFunction
+AddWord "concat", enumFunction
+AddWord "Copy", enumFunction
+AddWord "CopyFile", enumFunction
+AddWord "CopyFolder", enumFunction
+AddWord "cos", enumFunction
+AddWord "CreateFolder", enumFunction
+AddWord "CreateTextFile", enumFunction
+AddWord "Delete", enumFunction
+AddWord "DeleteFile", enumFunction
+AddWord "DeleteFolder", enumFunction
+AddWord "dimensions", enumFunction
+AddWord "DriveExists", enumFunction
+AddWord "escape", enumFunction
+AddWord "eval", enumFunction
+AddWord "exec", enumFunction
+AddWord "Exists", enumFunction
+AddWord "exp", enumFunction
+AddWord "FileExists", enumFunction
+AddWord "fixed", enumFunction
+AddWord "floor", enumFunction
+AddWord "FolderExists", enumFunction
+AddWord "fontcolor", enumFunction
+AddWord "fontsize", enumFunction
+AddWord "fromCharCode", enumFunction
+AddWord "GetAbsolutePathName", enumFunction
+AddWord "GetBaseName", enumFunction
+AddWord "getDate", enumFunction
+AddWord "getDay", enumFunction
+AddWord "GetDrive", enumFunction
+AddWord "GetDriveName", enumFunction
+AddWord "GetExtensionName", enumFunction
+AddWord "GetFile", enumFunction
+AddWord "GetFileName", enumFunction
+AddWord "GetFolder", enumFunction
+AddWord "getFullYear", enumFunction
+AddWord "getHours", enumFunction
+AddWord "getItem", enumFunction
+AddWord "getMilliseconds", enumFunction
+AddWord "getMinutes", enumFunction
+AddWord "getMonth", enumFunction
+AddWord "GetParentFolderName", enumFunction
+AddWord "getSeconds", enumFunction
+AddWord "GetSpecialFolder", enumFunction
+AddWord "GetTempName", enumFunction
+AddWord "getTime", enumFunction
+AddWord "getTimezoneOffset", enumFunction
+AddWord "getUTCDate", enumFunction
+AddWord "getUTCDay", enumFunction
+AddWord "getUTCFullYear", enumFunction
+AddWord "getUTCHours", enumFunction
+AddWord "getUTCMilliseconds", enumFunction
+AddWord "getUTCMinutes", enumFunction
+AddWord "getUTCMonth", enumFunction
+AddWord "getUTCSeconds", enumFunction
+AddWord "getVarDate", enumFunction
+AddWord "getYear", enumFunction
+AddWord "indexOf", enumFunction
+AddWord "isFinite", enumFunction
+AddWord "isNaN", enumFunction
+AddWord "italics", enumFunction
+AddWord "item", enumFunction
+AddWord "Items", enumFunction
+AddWord "join", enumFunction
+AddWord "Keys", enumFunction
+AddWord "lastIndexOf", enumFunction
+AddWord "lbound", enumFunction
+AddWord "link", enumFunction
+AddWord "log", enumFunction
+AddWord "match", enumFunction
+AddWord "max", enumFunction
+AddWord "min", enumFunction
+AddWord "Move", enumFunction
+AddWord "MoveFile", enumFunction
+AddWord "moveFirst", enumFunction
+AddWord "MoveFolder", enumFunction
+AddWord "moveNext", enumFunction
+AddWord "OpenAsTextStream", enumFunction
+AddWord "OpenTextFile", enumFunction
+AddWord "parse", enumFunction
+AddWord "parseFloat", enumFunction
+AddWord "parseInt", enumFunction
+AddWord "pow", enumFunction
+AddWord "random", enumFunction
+AddWord "Read", enumFunction
+AddWord "ReadAll", enumFunction
+AddWord "ReadLine", enumFunction
+AddWord "Remove", enumFunction
+AddWord "RemoveAll", enumFunction
+AddWord "replace", enumFunction
+AddWord "reverse", enumFunction
+AddWord "round", enumFunction
+AddWord "search", enumFunction
+AddWord "setDate", enumFunction
+AddWord "setFullYear", enumFunction
+AddWord "setHours", enumFunction
+AddWord "setMilliseconds", enumFunction
+AddWord "setMinutes", enumFunction
+AddWord "setMonth", enumFunction
+AddWord "setSeconds", enumFunction
+AddWord "setTime", enumFunction
+AddWord "setUTCDate", enumFunction
+AddWord "setUTCFullYear", enumFunction
+AddWord "setUTCHours", enumFunction
+AddWord "setUTCMilliseconds", enumFunction
+AddWord "setUTCMinutes", enumFunction
+AddWord "setUTCMonth", enumFunction
+AddWord "setUTCSeconds", enumFunction
+AddWord "setYear", enumFunction
+AddWord "sin", enumFunction
+AddWord "Skip", enumFunction
+AddWord "SkipLine", enumFunction
+AddWord "slice", enumFunction
+AddWord "small", enumFunction
+AddWord "sort", enumFunction
+AddWord "split", enumFunction
+AddWord "sqrt", enumFunction
+AddWord "strike", enumFunction
+AddWord "sub", enumFunction
+AddWord "substr", enumFunction
+AddWord "substring", enumFunction
+AddWord "sup", enumFunction
+AddWord "tan", enumFunction
+AddWord "test", enumFunction
+AddWord "toArray", enumFunction
+AddWord "toGMTString", enumFunction
+AddWord "toLocaleString", enumFunction
+AddWord "toLowerCase", enumFunction
+AddWord "toString", enumFunction
+AddWord "toUpperCase", enumFunction
+AddWord "toUTCString", enumFunction
+AddWord "ubound", enumFunction
+AddWord "unescape", enumFunction
+AddWord "UTC", enumFunction
+AddWord "valueOf", enumFunction
+AddWord "Write", enumFunction
+AddWord "WriteBlankLines", enumFunction
+AddWord "WriteLine", enumFunction
+
+AddWord "ActiveXObject", enumFunction
+AddWord "Array", enumFunction
+AddWord "Boolean", enumFunction
+AddWord "Date", enumFunction
+AddWord "Enumerator", enumFunction
+AddWord "Function", enumFunction
+AddWord "Math", enumFunction
+AddWord "Number", enumFunction
+AddWord "Object", enumFunction
+AddWord "RegExp", enumFunction
+AddWord "TextStream", enumFunction
+AddWord "VBArray", enumFunction
+
+AddWord "arguments", enumFunction
+AddWord "AtEndOfLine", enumFunction
+AddWord "AtEndOfStream", enumFunction
+AddWord "Attributes", enumFunction
+AddWord "AvailableSpace", enumFunction
+AddWord "caller", enumFunction
+AddWord "Column", enumFunction
+AddWord "CompareMode", enumFunction
+AddWord "constructor", enumFunction
+AddWord "Count", enumFunction
+AddWord "DateCreated", enumFunction
+AddWord "DateLastAccessed", enumFunction
+AddWord "DateLastModified", enumFunction
+AddWord "Drive", enumFunction
+AddWord "DriveLetter", enumFunction
+AddWord "Drives", enumFunction
+AddWord "DriveType", enumFunction
+AddWord "E", enumFunction
+AddWord "Files", enumFunction
+AddWord "FileSystem", enumFunction
+AddWord "FreeSpace", enumFunction
+AddWord "global", enumFunction
+AddWord "ignoreCase", enumFunction
+AddWord "index", enumFunction
+AddWord "Infinity", enumFunction
+AddWord "input", enumFunction
+AddWord "IsReady", enumFunction
+AddWord "IsRootFolder", enumFunction
+AddWord "Item", enumFunction
+AddWord "Key", enumFunction
+AddWord "lastIndex", enumFunction
+AddWord "lastMatch", enumFunction
+AddWord "lastParen", enumFunction
+AddWord "leftContext", enumFunction
+AddWord "length", enumFunction
+AddWord "Line", enumFunction
+AddWord "LN10", enumFunction
+AddWord "LN2", enumFunction
+AddWord "LOG10E", enumFunction
+AddWord "LOG2E", enumFunction
+AddWord "MAX_VALUE", enumFunction
+AddWord "MIN_VALUE", enumFunction
+AddWord "multiline", enumFunction
+AddWord "Name", enumFunction
+AddWord "NaN", enumFunction
+AddWord "NEGATIVE_INFINITY", enumFunction
+AddWord "ParentFolder", enumFunction
+AddWord "Path", enumFunction
+AddWord "PI", enumFunction
+AddWord "POSITIVE_INFINITY", enumFunction
+AddWord "prototype", enumFunction
+AddWord "rightContext", enumFunction
+AddWord "RootFolder", enumFunction
+AddWord "SerialNumber", enumFunction
+AddWord "ShareName", enumFunction
+AddWord "ShortName", enumFunction
+AddWord "ShortPath", enumFunction
+AddWord "Size", enumFunction
+AddWord "source", enumFunction
+AddWord "SQRT1_2", enumFunction
+AddWord "SQRT2", enumFunction
+AddWord "SubFolders", enumFunction
+AddWord "TotalSize", enumFunction
+AddWord "Type", enumFunction
+AddWord "VolumeName", enumFunction
+
+var epsilon = 0.0000000000001;  // Algún número muy pequeño contra el cual se hace la comprobación.
+var tripleta = false;
+function compruebaEnteros (a, b, c)  {  // La función de comprobación para los enteros.
+    if ( (a*a) == ((b*b) + (c*c)) )  {  // La comprobación.
+    tripleta = true;
+    }
+}  // Fin de la función de comprobación de enteros.
+function compruebaFlotante (a, b, c)  {  // La función de comprobación para los números de coma flotante.
+var laPrueba= ((a*a) - ((b*b) + (c*c)))  // Obtiene el número de la prueba.
+    if (laPrueba< 0)  {  // La comprobación necesita el valor absoluto, por lo que invierte laPrueba si su valor es negativo.
+    laPrueba*= -1;
+    }
+    if (epsilon > laPrueba)  {  // Si son tan aproximados, ¡son muy aproximados!
+    tripleta = true;
+    }
+}  // Fin de la función de comprobación de coma flotante.
+function compruebaTripleta(a, b, c)  {  // La comprobación. Primero pasa el lado mayor a la posición "a".
+var d = 0;  // Crea un depósito temporal.
+    if (c > b)  {  // Si c > b, los intercambia.
+    d = c;
+    c = b;
+    b = d;
+    }  // Si no, ignorarlos.
+    if (b > a)  {  // Si b > a, los intercambia.
+    d = b;
+    b = a;
+    a = d;
+    }  // Si no, ignorarlos.
+// Ahora, el lado "a" es la hipotenusa, si es que hay una.
+    if (((a%1) == 0) && ((b%1) == 0) && ((c%1) == 0))  {  // Comprueba los tres valores. ¿Son enteros?
+    compruebaEnteros (a, b, c);  // Si lo son se utiliza la comprobación precisa.
+    }
+    else
+        compruebaFlotante (a, b, c);  // Si no lo son se obtienen los valores más próximos.
+}  // Fin de la función de comprobación de la tripleta.
+// Las tres próximas instrucciones asignan valores de prueba para realizar una comprobación.
+var ladoA = 5;
+var ladoB = 5;
+var ladoC = Math.sqrt(50);
+compruebaTripleta(ladoA, ladoB, ladoC);  // Llama a la función. Después de la llamada, tripleta contiene el resultado.
+
+

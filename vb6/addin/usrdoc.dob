@@ -1,0 +1,129 @@
+VERSION 5.00
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "mscomctl.ocx"
+Begin VB.UserDocument usrdoc 
+   ClientHeight    =   1260
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   2055
+   HScrollSmallChange=   225
+   LockControls    =   -1  'True
+   ScaleHeight     =   1260
+   ScaleWidth      =   2055
+   VScrollSmallChange=   225
+   Begin MSComctlLib.ImageList imglst 
+      Left            =   1410
+      Top             =   750
+      _ExtentX        =   1005
+      _ExtentY        =   1005
+      BackColor       =   -2147483643
+      ImageWidth      =   16
+      ImageHeight     =   16
+      MaskColor       =   12632256
+      _Version        =   393216
+      BeginProperty Images {2C247F25-8591-11D1-B16A-00C0F0283628} 
+         NumListImages   =   1
+         BeginProperty ListImage1 {2C247F27-8591-11D1-B16A-00C0F0283628} 
+            Picture         =   "usrdoc.dox":0000
+            Key             =   ""
+         EndProperty
+      EndProperty
+   End
+   Begin VB.ListBox lstActions 
+      DragIcon        =   "usrdoc.dox":059A
+      Height          =   780
+      IntegralHeight  =   0   'False
+      ItemData        =   "usrdoc.dox":09DC
+      Left            =   0
+      List            =   "usrdoc.dox":09DE
+      Style           =   1  'Checkbox
+      TabIndex        =   0
+      Top             =   375
+      Width           =   2025
+   End
+   Begin MSComctlLib.Toolbar toolbar 
+      Align           =   1  'Align Top
+      Height          =   360
+      Left            =   0
+      TabIndex        =   1
+      Top             =   0
+      Width           =   2055
+      _ExtentX        =   3625
+      _ExtentY        =   635
+      ButtonWidth     =   609
+      ButtonHeight    =   582
+      Appearance      =   1
+      Style           =   1
+      ImageList       =   "imglst"
+      _Version        =   393216
+      BeginProperty Buttons {66833FE8-8583-11D1-B16A-00C0F0283628} 
+         NumButtons      =   1
+         BeginProperty Button1 {66833FEA-8583-11D1-B16A-00C0F0283628} 
+            Key             =   "conect"
+            Object.ToolTipText     =   "Conectar con la DB"
+            ImageIndex      =   1
+         EndProperty
+      EndProperty
+   End
+End
+Attribute VB_Name = "usrdoc"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Private Sub lstActions_ItemCheck(Item As Integer)
+    lstActions.Selected(Item) = True
+End Sub
+
+Private Sub toolbar_ButtonClick(ByVal Button As MSComctlLib.Button)
+
+    Select Case Button.Key
+    
+        Case "conect"
+            frmConfiguracion.Show
+        Case Else
+            '
+    End Select
+
+End Sub
+
+Private Sub UserDocument_Resize()
+    lstActions.Width = ScaleWidth - (lstActions.Left * 2)
+    lstActions.Height = ScaleHeight - (toolbar.Height + 30)
+End Sub
+
+Public Sub AddString(cad As String, chk As Boolean)
+    
+    lstActions.AddItem cad
+    
+    If chk = True Then
+        lstActions.Selected(lstActions.NewIndex) = True
+    End If
+    
+End Sub
+
+Public Sub AddTabla(cad As String)
+    
+    If (cad <> "") Then
+            
+        If (lstActions.ListCount = 2) Then
+            lstActions.RemoveItem (1)
+            lstActions.AddItem cad
+            lstActions.Selected(lstActions.NewIndex) = True
+        End If
+        
+        If (lstActions.ListCount = 1) Then
+            lstActions.AddItem cad
+            lstActions.Selected(lstActions.NewIndex) = True
+        End If
+       
+    End If
+    
+End Sub
+
+
+Public Sub ClearList()
+    lstActions.Clear
+End Sub
+
