@@ -1,0 +1,44 @@
+Attribute VB_Name = "todo"
+'=============================================================================
+' TODO: Cosas por hacer
+'-----------------------------------------------------------------------------
+'
+'-----------------------------------------------------------------------------
+'   DELEGADOS PARA LA VERSION 1.3
+'-----------------------------------------------------------------------------
+'   Tocar listado M3U (Borrar de la lista y seleccion multiple)
+'
+'   Mantenimiento de las tablas: Autor, Genero, Medio, Pariente, Categoria
+'   Sub-genero.
+'
+'   Corregir el nombre del archivo en el flex de detalles (incompleto aveces)
+'
+'   Crear base de datos limpia desde codigo
+'
+'   Permitir ordenar los datos del flex de resultados de acuerdo al gusto del
+'   usuario (como excel) empleando:
+'       flxResults.ColPosition(flxResults.MouseCol) = mi_nueva_posicion
+'
+'   Agregar splitter al frmDataControl
+'
+'   Poner el icono del tipo de archivo en el flex de detalles
+'
+'-----------------------------------------------------------------------------
+'   DELEGADOS PARA LA VERISON 2.0 (O POSTERIORES)
+'-----------------------------------------------------------------------------
+'   Soporte de TAGs MP3 ID3v1
+'
+'   Soporte de fotos de cantantes, fotos de albumes, y letras de archivos mp3
+'
+'   soporte de multiples idiomas
+'
+'=============================================================================
+' BUGS: Errores por resolver
+'-----------------------------------------------------------------------------
+'
+'   -   Una vez no se descargo un objeto desconocido (el programa se quedo en
+'       memoria, aunque sin ventanas)
+'
+'   -   Ciertas veces la funcion que extrae el nombre del CD y su serial no
+'       funciona dando como respuesta una cadena vacia y serial 0000-0000
+

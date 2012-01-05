@@ -1,0 +1,48 @@
+	--------------------------------------------------------
+	ARCHIVOS INCLUIDOS EN EL INSTALADOR
+	--------------------------------------------------------
+	r_porter.exe
+	\data\r_porter.mdb
+	\hlp\...
+	--------------------------------------------------------
+	exlightbutton.ocx
+	exlightlabel.ocx
+	exsplit.ocx
+	exatltag.dll
+	--------------------------------------------------------
+	comdlg32.ocx
+	mscomct2.ocx
+	mshflxgd.ocx
+	tabctl32.ocx
+	mscomctl.ocx
+	richtx32.ocx
+	--------------------------------------------------------
+
+	--------------------------------------------------------
+	SOPORTE VB
+	--------------------------------------------------------
+	msvbvm60.dll		(runtime vb)
+	msstdfmt.dll		mshflxgd.ocx
+
+	vb5db.dll
+	oleaut32.dll		msvbvm60.dll
+	olepro32.dll		msvbvm60.dll
+	stdole2.tlb		msvbvm60.dll
+	asycfilt.dll		msvbvm60.dll
+	comcat.dll		msvbvm60.dll
+
+	msvcrt.dll		flash.ocx
+	riched32.dll		richtx32.ocx
+	oledlg.dll		richtx32.ocx
+	msvcrt20.dll
+
+	--------------------------------------------------------
+	NO INCLUIDOS EN EL INSTALADOR (PERO REQUERIDOS)
+	--------------------------------------------------------
+	mdac_typ 2.7		Microsoft Data Access Components 2.7
+	msscript.ocx		Microsoft Script control
+
+	--------------------------------------------------------
+	POR CONFIRMAR (NO INCLUIDO)
+	--------------------------------------------------------
+	atl.dll			exatltag.dll (w98)
