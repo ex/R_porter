@@ -1,0 +1,74 @@
+
+body
+{
+font-size: 70%;
+color:#000000;
+background-color:#FFFFFF;
+margin-top:0px;
+margin-left:0px;
+margin-right:0px;
+margin-bottom:0px;
+}
+
+body, h1, h2, h3, table, td, th, ul, ol
+{
+font-family: verdana,arial,"Lucida Console",sans-serif;
+}
+
+table
+{
+font-size: 100%;
+}
+
+h1 {font-size:160%;}
+h2 {font-size:120%;}
+h3 {font-size:110%;}
+h4 {font-size:100%;}
+h5 {font-size:90%;}
+h6 {font-size:80%;}
+
+hr
+{
+background-color:transparent;
+color:#3399FF;
+height:1px;
+}
+
+p, p.about, p.justify, p.autor
+{
+font-family: verdana,arial,"Lucida Console",sans-serif;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+p.justify
+{
+text-align: justify;
+}
+
+p.about
+{
+font-size: 80%;
+color: #526183;
+background-color:transparent;
+}
+
+p.autor
+{
+text-align: right;
+color: #1050FE;
+}
+
+p.src
+{
+font-family: monospace;
+}
+
+td.src
+{
+background-color:#E6E4EF;
+}
+
+a:link      { text-decoration: none; color: #1050FE }
+a:visited   { text-decoration: none; color: #6666FF }
+a:hover     { text-decoration: none; color: #000000 }
