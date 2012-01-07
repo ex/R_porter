@@ -1,9 +1,8 @@
 R_porter
 ========
 
-This is small program for scanning folders and generating reports.
-it can save the results to a database.
-Right now only for Windows.
+This is small program for scanning folders and generating reports.  
+It can save the results to a database. Right now only for Windows.
 
 
 Documents
